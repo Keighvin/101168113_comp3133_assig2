@@ -16,5 +16,6 @@ cd angular-apollo
 
 then run in cmd
 ng serve
-(It might have issues by the way... it kinda broke at the last second and I have not a clue as to why.)
+(It might have issues by the way... it kinda broke at the last second and I have not a clue as to why. might have something to do with sign up, maybe... also don't ask me why login redirects to main page, I don't know.)
+
 
