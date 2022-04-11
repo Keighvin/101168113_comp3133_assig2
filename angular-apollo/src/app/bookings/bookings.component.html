@@ -1,0 +1,14 @@
+<div *ngFor="let booking of bookings">
+    <div class="card" style="width: 100%; margin-top: 10px">
+        <div class="card-body">
+
+                <h5 class="card-title">{{ booking.user.username }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Starting: {{ booking.booking_start }}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Ending: {{ booking.booking_ending }}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Booked at: {{ booking.booking_date }}</h6>
+
+
+        </div>      
+    </div>     
+</div>
+Might not work right now... 

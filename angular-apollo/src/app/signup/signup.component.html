@@ -1,0 +1,41 @@
+<div>
+    <form [formGroup]="form">
+        <fieldset>
+            <legend>Sign Up</legend>
+            <div class="form-field">
+                <label>Username:</label>
+                <input name="username" formControlName="username">
+                <label>{{usermsg}}</label>
+            </div>
+            <div class="form-field">
+                <label>Firstname:</label>
+                <input name="firstname" formControlName="firstname">
+            </div>
+            <div class="form-field">
+                <label>Lastname:</label>
+                <input name="lastname" formControlName="lastname">
+            </div>
+            
+
+            <div class="form-field">
+                <label>Email:</label>
+                <input name="email" formControlName="email">
+                <label>{{emailmsg}}</label>
+            </div>
+            <div class="form-field">
+                <label>Password:</label>
+                <input name="password" formControlName="password" 
+                    type="password">
+            </div>
+            <div class="form-field">
+                <label>Type:</label>
+                <input name="type" formControlName="type">
+                <label>{{typemsg}}</label>
+            </div>
+        </fieldset>
+        <div class="form-buttons">
+            <button class="button button-primary" 
+                    (click)="signup()">Sign up</button>
+        </div>
+    </form>
+</div>

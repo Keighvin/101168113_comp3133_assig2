@@ -1,0 +1,11 @@
+
+    <div *ngFor="let listing of listings|async">
+        <div class="card" style="width: 100%; margin-top: 10px">
+            <div class="card-body">
+                <a href="listing/{{listing.listing_id}}"class="card-link"> 
+                    <h5 class="card-title">{{ listing.listing_title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">${{ listing.price }}/night</h6>
+                </a>
+            </div>      
+        </div>     
+    </div>

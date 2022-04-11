@@ -1,0 +1,20 @@
+
+<div *ngIf="listings | async as listing">
+    <div class="card" style="width: 100%; margin-top: 10px">
+        <div class="card-body">
+
+                <h5 class="card-title">{{ listing.listing_title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ listing.description }}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">${{ listing.price }}/night</h6>
+                <br>
+                <h6 class="card-subtitle mb-2 text-muted">Location</h6>
+                <p class="card-subtitle mb-2 text-muted">{{ listing.street }}, {{ listing.city }}, {{ listing.postal_code }}</p>
+                <br>
+                <h6 class="card-subtitle mb-2 text-muted">Owner</h6>
+                <p class="card-subtitle mb-2 text-muted">Owner contact info: {{ listing.user.username }}</p>
+                <p class="card-subtitle mb-2 text-muted">Owner contact info: {{ listing.user.email }}</p>
+                <a href="/listing/{{id}}/bookinghistory">View previeous bookings!</a>
+        </div>      
+    </div>     
+</div> 
+
